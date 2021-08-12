@@ -1,7 +1,8 @@
 <script>
     import { db } from "./firestore";
     import User from './User.svelte';
-
+    import { Button } from "sveltestrap";
+    
     let users = []
     let rank= ''
     let firstname=''
@@ -30,7 +31,7 @@
         <input type="text" bind:value={firstname}>
         <input type="text" bind:value={lastname}>
         <input type="text" bind:value={badge}>
-        <button>ADD</button>
+        <Button success>ADD</Button>
         </form>
     </div>
 
